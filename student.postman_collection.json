@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "f15c825a-f8b8-41e1-a2e5-bb9753d33dad",
+		"name": "student",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4323956"
+	},
+	"item": [
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"student1\",\r\n    \"password\": \"P@ssw0rd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8033/api/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8033",
+					"path": [
+						"api",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWSiwtyVCyUlLSUSouTQIyDA0MDICczMQSJStDcyNLIwtzIzMLHaXUigK4gIWZRS0AybafyDoAAAA.OzrKLSxGJb5R2H7rnK4a29M-oAlZR-CidntjTfdI83I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWSiwtyVCyUlLSUSouTQIyDA0MDICczMQSJStDcyNLIwtDc0NTHaXUigKYgJGxkVktAOPQSWc6AAAA.kfeWe2i6HjLCYhbKJOc3xrOZ1sYEQBjOFfGR3Y4Uhv0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8033/api/courses?page=0&size=2&name=ja",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8033",
+					"path": [
+						"api",
+						"courses"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						},
+						{
+							"key": "name",
+							"value": "ja"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "course",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWSiwtyVCyUlLSUSouTQIyDA0MDICczMQSJStDcyNLIwtzIzMLHaXUigK4gIWZRS0AybafyDoAAAA.OzrKLSxGJb5R2H7rnK4a29M-oAlZR-CidntjTfdI83I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8033/api/courses/1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8033",
+					"path": [
+						"api",
+						"courses",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schedule",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWSiwtyVCyUlLSUSouTQIyDA0MDICczMQSJStDcyNLIwsTCxMjHaXUigKYgKmJiVEtAEaud046AAAA.hPG9ZAjCWhzu9cD7tkfmPHc9zceFTZRisA-jrnVOGdA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWSiwtyVCyUlLSUSouTQIyDA0MDICczMQSJStDcyNLIwtDc0NTHaXUigKYgJGxkVktAOPQSWc6AAAA.kfeWe2i6HjLCYhbKJOc3xrOZ1sYEQBjOFfGR3Y4Uhv0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8033/api/courses/schedule/1000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8033",
+					"path": [
+						"api",
+						"courses",
+						"schedule",
+						"1000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWSiwtyVCyUlLSUSouTQIyDA0MDICczMQSJStDcyNLIwtzIzMLHaXUigK4gIWZRS0AybafyDoAAAA.OzrKLSxGJb5R2H7rnK4a29M-oAlZR-CidntjTfdI83I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8033/api/courses/register/1001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8033",
+					"path": [
+						"api",
+						"courses",
+						"register",
+						"1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancel",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWSiwtyVCyUlLSUSouTQIyDA0MDICczMQSJStDcyNLIwtzIzMLHaXUigK4gIWZRS0AybafyDoAAAA.OzrKLSxGJb5R2H7rnK4a29M-oAlZR-CidntjTfdI83I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8033/api/courses/cancel/1001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8033",
+					"path": [
+						"api",
+						"courses",
+						"cancel",
+						"1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "student courses",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWSiwtyVCyUlLSUSouTQIyDA0MDICczMQSJStDcyNLIwtzIzMLHaXUigK4gIWZRS0AybafyDoAAAA.OzrKLSxGJb5R2H7rnK4a29M-oAlZR-CidntjTfdI83I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWSiwtyVCyUlLSUSouTQIyDA0MDICczMQSJStDcyNLIwtDc0NTHaXUigKYgJGxkVktAOPQSWc6AAAA.kfeWe2i6HjLCYhbKJOc3xrOZ1sYEQBjOFfGR3Y4Uhv0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8033/api/courses/my-courses?page=0&size=1&name=IT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8033",
+					"path": [
+						"api",
+						"courses",
+						"my-courses"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "1"
+						},
+						{
+							"key": "name",
+							"value": "IT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "eyJ6aXAiOiJHWklQIiwiYWxnIjoiSFMyNTYifQ.H4sIAAAAAAAA_6tWKi5NUrJSMjQwMFDSUcpMLFGyMjQ3sjSysDC3MNRRSq0ogAlYGlsY1gIAJ6-tBjAAAAA.3ZlJ2Fiz76cU12k8mzJERKwZ4zN_HFA0S8yUiB6qezY",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8033/api/refresh-token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8033",
+					"path": [
+						"api",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

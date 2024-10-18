@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1-schedule" author="system">
+        <createTable tableName="SCHEDULE">
+            <column name="ID" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="TIMESTAMP"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="TIMESTAMP"/>
+            <column name="CONTENT" type="VARCHAR(255)"/>
+            <column name="SCHEDULE_DATE" type="TIMESTAMP"/>
+            <column name="LOCATION" type="VARCHAR(255)"/>
+            <column name="COURSE_ID" type="BIGINT"/>
+            <column name="DURATION" type="INT"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2-schedule" author="system">
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1002"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-22 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1000"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1003"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-24 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1000"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1004"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-26 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1000"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1001"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-20 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1000"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1000"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-18 17:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1000"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1005"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-22 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1001"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1006"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-24 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1001"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1007"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-26 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1001"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1008"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-20 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1001"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1009"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-18 17:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1001"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1010"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-22 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1002"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1011"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-24 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1002"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1012"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-26 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1002"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1013"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-20 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1002"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1014"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-18 17:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1002"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1015"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-22 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1003"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1016"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-24 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1003"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1017"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-26 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1003"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1018"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-20 10:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1003"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <insert tableName="SCHEDULE">
+            <column name="ID" value="1019"/>
+            <column name="CREATED_BY" value="SYSTEM"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="CONTENT" value="additional instructions"/>
+            <column name="SCHEDULE_DATE" valueDate="2024-10-18 17:00:00.000000"/>
+            <column name="LOCATION" value="hall1"/>
+            <column name="COURSE_ID" value="1003"/>
+            <column name="DURATION" value="2"/>
+        </insert>
+        <addForeignKeyConstraint
+                constraintName="fk_schedule_course"
+                referencedTableName="COURSE"
+                referencedColumnNames="ID"
+                baseTableName="SCHEDULE"
+                baseColumnNames="COURSE_ID"/>
+    </changeSet>
+</databaseChangeLog>

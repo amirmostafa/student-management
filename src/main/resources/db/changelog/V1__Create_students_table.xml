@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1-student" author="system">
+        <createTable tableName="STUDENT">
+            <column name="ID" type="BIGINT">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="CREATED_BY" type="VARCHAR(255)"/>
+            <column name="CREATED_DATE" type="TIMESTAMP"/>
+            <column name="LAST_MODIFIED_BY" type="VARCHAR(255)"/>
+            <column name="LAST_MODIFIED_DATE" type="TIMESTAMP"/>
+            <column name="EMAIL" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="FIRST_NAME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="LAST_NAME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="PASSWORD" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="USERNAME" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="2-student" author="system">
+        <insert tableName="STUDENT">
+            <column name="ID" value="1000"/>
+            <column name="CREATED_BY" value="system"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="EMAIL" value="student1@gmail.com"/>
+            <column name="FIRST_NAME" value="student1"/>
+            <column name="LAST_NAME" value="student1"/>
+            <column name="PASSWORD" value="$2a$10$pDI1sO431ZO8LT39P8I.aOE5ira7Hp1bdITEi/3ICQPsBN6wbAmc."/>
+            <column name="USERNAME" value="student1"/>
+        </insert>
+        <insert tableName="STUDENT">
+            <column name="ID" value="1001"/>
+            <column name="CREATED_BY" value="system"/>
+            <column name="CREATED_DATE" valueDate="2024-10-18 17:36:08.060000"/>
+            <column name="LAST_MODIFIED_BY" value="NULL"/>
+            <column name="LAST_MODIFIED_DATE" value="NULL"/>
+            <column name="EMAIL" value="student2@gmail.com"/>
+            <column name="FIRST_NAME" value="student2"/>
+            <column name="LAST_NAME" value="student2"/>
+            <column name="PASSWORD" value="$2a$10$pDI1sO431ZO8LT39P8I.aOE5ira7Hp1bdITEi/3ICQPsBN6wbAmc."/>
+            <column name="USERNAME" value="student2"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
